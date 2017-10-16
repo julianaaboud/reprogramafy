@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Reprogramafy</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <nav>
       <div class="logo">
         <img src="logo-branco.png" alt="logo reprogramafy">
       </div>
-      <button>Login</button>
+      <button id="botao">Login</button>
     </nav>
   </header>
   <main>
     <h1>Sua música. Sua programação.</h1>
     <h2>Qualquer semelhança com outras plataformas é mera coincidência.</h2>
   </main>
+
+  <div id="fundo">
+    <section id="modal" class="container">
+      <button id="fechar"><img id="fechar" src="fechar.png" alt="fechar"></button>
+      <div class="margin">
+        <img src="logo-vertical.png" alt="Logotipo Reprogramafy">
+      </div>
+      <form action="">
+        <div class="margin"><input required class="border-radius" type="email" placeholder="Email"></div>
+        <div class="margin"><input required class="border-radius" type="password" placeholder="Senha"></div>
+        <div class="margin"><button class="border-logar" id="Logar">Logar</button></div>
+      </form>
+    </section>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>

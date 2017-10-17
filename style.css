@@ -86,9 +86,8 @@ main {
 
 #modal{
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
+  margin: auto;
+  height: 430px;
 }
 
 #modal.visivel{
@@ -106,14 +105,75 @@ main {
 }
 
 #fundo.visivel{
-  display: block;
+  display: flex;
 }
 
 #fechar{
   max-width: 20px;
-  position: fixed;
+  position: absolute;
   top: 10px;
-  right: 10px; 
+  right: 10px;
+}
 
+.erro{
+  background: red;
+  animation: shake 0.2s 5; /*nome, quanto tempo dura, quantas repetições */
+}
 
+@keyframes shake {
+  0%{
+    transform: none;
+  }
+  33%{
+    transform: translateX(-5px); /*anda somente no eixo x -  horizontal*/
+  }
+  66%{
+    transform: translateX(5px);
+  }
+  100%{
+    transform: none;
+  }
+}
+
+#player{
+  display: flex;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+}
+
+.musica {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.play{
+  color: red;
+  height: 50px;
+  width: 50px;
+}
+
+.player-barra{
+  height: 5px;
+  flex-grow: 1;
+  background: grey;
+}
+
+.player-tempo{
+  display: flex;
+  align-items: center;
+}
+
+.player-tempo span{
+  margin: 0 8px;
+}
+
+.tocado{
+  background: #fff;
+  width: 30%;
+  height: 4px;
+}
+
+.botao-play{
+  background: none;
+  border: none;
 }

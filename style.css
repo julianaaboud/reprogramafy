@@ -177,3 +177,49 @@ main {
   background: none;
   border: none;
 }
+
+.slider{
+  width: 100%;
+  position: relative;
+}
+
+.slider > ul{
+  list-style-type: none;
+  width: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.slider > ul > li {
+  width: inherit;
+}
+
+.slider > ul > li > img {
+  width: inherit;
+}
+
+.controles{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+#anterior{
+  position: absolute;
+  left: 0;
+}
+
+#proximo{
+  position: absolute;
+  right: 0;
+}
+
+.slider-item{
+  display: none;
+}
+
+.slider-item.active{
+  display: block;
+}
+

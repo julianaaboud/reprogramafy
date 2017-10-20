@@ -15,7 +15,7 @@ anterior.onclick = function(){
        }
         if (ativa === imagens.length-1){    
             imagens[0].classList.add("active");
-            ativa ++;
+            ativa = 0;
         } else {
             imagens[ativa + 1].classList.add("active");
             ativa++;

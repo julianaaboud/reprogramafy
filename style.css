@@ -45,6 +45,14 @@ nav > button:hover {
   color: #fff;
 }
 
+#botaoCadastro{
+  margin: 15px;
+}
+
+#modal-cadastro{
+  display: block;
+}
+
 main {
   flex: 1 1 100%;
   color: #fff;
@@ -72,11 +80,32 @@ main {
   margin-right: 30px;
 }
 
+#cadastrar{
+  border-radius: 20px;
+  text-align: center;
+  width: 90px;
+  padding: 10px;
+  background-color: #7f469a;
+  color: white;
+  float: right;
+  margin-right: 30px;
+}
+
 .container{
   background-color: white;
   padding: 30px;
   width: 400px;
   height: 450px;
+  margin: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container-modal-cadastro{
+  background-color: white;
+  padding: 30px;
+  width: 400px;
+  height: 550px;
   margin: 30px;
   text-align: center;
   border-radius: 20px;
@@ -92,11 +121,21 @@ main {
   height: 430px;
 }
 
-#modal.visivel{
+ #modal-cadastro{
+  position: relative;
+  margin: auto;
+  height: 500px;
+ }
+
+#modal.visivel, #modal-cadastro.visivel{
   display: block;
 }
 
-#fundo{
+.cor{
+  color: black;
+}
+
+#fundo, #fundoCadastro{
   position: fixed;
   top: 0;
   left: 0;
@@ -106,7 +145,7 @@ main {
   display: none;
 }
 
-#fundo.visivel{
+#fundo.visivel, #fundoCadastro.visivel{
   display: flex;
 }
 

@@ -31,12 +31,30 @@
       <form action="novidades.html">
         <div class="margin"><input required id="email" class="border-radius" type="email" placeholder="Email"></div>
         <div class="margin"><input required id="senha" class="border-radius" type="password" placeholder="Senha"></div>
+        <div class="margin cor">
         <div class="margin"><button class="border-logar" id="Logar">Logar</button></div>
       </form>
+       <button id="botaoCadastro" type="button">Não é cadastrado? Cadastre-se!</button></div>
     </section>
   </div>
-  <script src="script.js"></script>
-  <script src="auth.js"></script>
+  <div id="fundoCadastro">
+    <section id="modal-cadastro" class="container-modal-cadastro">
+      <button id="fecharCadastro"><img id="fechar" src="fechar.png" alt="fechar"></button>
+      <div class="margin">
+        <img src="logo-vertical.png" alt="Logotipo Reprogramafy">
+      </div>
+      <form action="">
+        <div class="margin"><input required id="nomeCadastro" class="border-radius" type="nome" placeholder="Nome"></div>
+        <div class="margin"><input required id="emailCadastro" class="border-radius" type="email" placeholder="Email"></div>
+        <div class="margin"><input required id="senhaCadastro" class="border-radius" type="password" placeholder="Senha"></div>
+        <div class="margin cor">
+          <div class="margin"><button class="border-logar" id="cadastrar">Cadastrar</button></div>
+      </form>
+    </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cadastro.js"></script>
 </body>
 
 </html>
